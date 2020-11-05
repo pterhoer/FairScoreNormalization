@@ -11,7 +11,7 @@ Pattern Recognition Letters 2020
 ## Table of Contents 
 
 - [Abstract](#abstract)
-- [Main Idea](#main-idea)
+- [The Idea Behind Fair Score Normalization](#the-idea-behind-fair-score-normalization)
 - [Results](#results)
 - [Installation](#installation)
 - [Citing](#citing)
@@ -34,11 +34,24 @@ of ![\Large 10^{-3}](https://latex.codecogs.com/gif.latex?\inline&space;10^{-3})
 up to 82.9% at a false match rate of ![\Large 10^{-5}](https://latex.codecogs.com/gif.latex?\inline&space;10^{-5}). 
 Additionally, it is easily integrable into existing recognition systems and not limited to face biometrics.
 
-## Main idea
+## The Idea Behind Fair Score Normalization
 
-Explain main idea here
+Our fair score normalization approach is based on the notation of individual fairness, resulting in a solution that treats similar individuals similarly and thus, more fairly. 
+The proposed approach clusters samples in the embedding space such that similar identities are categorized without the need for pre-defined (e.g. demographic) classes. 
+For each cluster, an optimal local threshold is computed.
+To verifiy if two samples belong to the same identity, the two corresponding clusters are determined and the optimal local thresholds of these clusters are used to normalize the comparison score of both samples.
 
-We first visually demonstrate the need for a more in-dividual treatment in face recognition systems.  More-over, we show that our approach is able to treat similarindividuals more similarly
+The following Figure shows an t-SNE visualization of the embedding space for the dataset Adience. 
+The t-SNE algorithm maps the high-dimensional embedding space into a two-dimensional space such that similar samples in the high-dimension space lie closely together in two dimensions. 
+Furthermore, each sample is colored based on the local thresholds computed by the proposed approach. 
+Two observations can be made from this figure: 
+
+1. It shows that there are several clusters with similar local thresholds in the embedding space.
+Consequently, our proposed approach is able to identify similar identities and to treat them similarly (through similar local
+thresholds). 
+
+2. It shows that the optimal thresholds for each cluster vary significantly from 0.3 to 0.7. 
+This widespread of optimal local thresholds demonstrates the need for a more individual, and thus fair, treatment.
 
 <img src="Visualization.png" width="600" >
 
