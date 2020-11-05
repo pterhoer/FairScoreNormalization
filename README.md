@@ -9,7 +9,7 @@ Pattern Recognition Letters 2020
 ## Table of Contents 
 
 - [Abstract](#abstract)
-- [Key Points](#key-points)
+- [Main Idea](#main-idea)
 - [Results](#results)
 - [Installation](#installation)
 - [Citing](#citing)
@@ -36,11 +36,27 @@ Additionally, it is easily integrable into existing recognition systems and not 
 
 Explain main idea here
 
+We first visually demonstrate the need for a more in-dividual treatment in face recognition systems.  More-over, we show that our approach is able to treat similarindividuals more similarly
+
+<img src="Visualization.png" width="600" >
+
 ## Results
 
-Explain results here
+Experiments were conducted on three publicly available datasets (Adience, ColorFeret, and Morph).
+Some results of this work are shown below (based on FaceNet embeddings).
+For complete results, please take a look at the paper.
 
-<img src="BiasReductionFaceNet.png" width="430" >  <img src="ImprovementRecognitionPerformance.png" width="430" >
+First, an analysis of the bias reduction of the proposed approach (Ours) in comparison with two previous works (SLF [28] and FTC [33]) is presented. 
+The bias is measured in terms of STD of the class-wise FNMRs at a FMR of ![\Large 10^{-3}](https://latex.codecogs.com/gif.latex?\inline&space;10^{-3}). 
+Unlike both related works, our proposed approach mitigates bias effectively and consistently.
+
+<img src="BiasReductionFaceNet.png" height="250" >  
+
+Moreover, the improvement of the overall face recognition performance is analysed and shown in the Figure below.
+The verification performance is measured in terms of FNMR at several FMRs.
+Even while making the recognition process more fair, in contrast to previous work, our approach consistently improves the global recognition performance.
+
+<img src="ImprovementRecognitionPerformance.png" height="260" >
 
 ## Installation
 
@@ -53,8 +69,6 @@ If you use this code, please cite the following papers.
 
 
 ```
-
-
 @article{DBLP:journals/corr/abs-2002-03592,
   author    = {Philipp Terh{\"{o}}rst and
                Jan Niklas Kolf and
