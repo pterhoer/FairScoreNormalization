@@ -1,5 +1,7 @@
 ## Post-Comparison Mitigation of Demographic Bias in Face Recognition Using Fair Score Normalization
 
+<img src="Visualization2.png" height="400" align="right" >
+
 Pattern Recognition Letters 2020
 
 * [Research Paper (arXiv)](https://arxiv.org/abs/2002.03592)
@@ -50,13 +52,13 @@ First, an analysis of the bias reduction of the proposed approach (Ours) in comp
 The bias is measured in terms of STD of the class-wise FNMRs at a FMR of ![\Large 10^{-3}](https://latex.codecogs.com/gif.latex?\inline&space;10^{-3}). 
 Unlike both related works, our proposed approach mitigates bias effectively and consistently.
 
-<img src="BiasReductionFaceNet.png" height="250" >  
+<img src="BiasReductionFaceNet.png" width="600" >  
 
 Moreover, the improvement of the overall face recognition performance is analysed and shown in the Figure below.
 The verification performance is measured in terms of FNMR at several FMRs.
 Even while making the recognition process more fair, in contrast to previous work, our approach consistently improves the global recognition performance.
 
-<img src="ImprovementRecognitionPerformance.png" height="260" >
+<img src="ImprovementRecognitionPerformance.png" width="600" >
 
 ## Installation
 
@@ -65,7 +67,7 @@ TODO Jan
 
 ## Citing
 
-If you use this code, please cite the following papers.
+If you use this code, please cite the following paper.
 
 
 ```
