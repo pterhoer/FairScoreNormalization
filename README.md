@@ -24,8 +24,8 @@ Current face recognition systems achieve high progress on several benchmark test
 Despite this progress, recent works showed that these systems are strongly biased against demographic sub-groups.
 Consequently, an easily integrable solution is needed to reduce the discriminatory effect of these biased systems. 
 Previous work mainly focused on learning less biased face representations, which comes at the cost of a strongly degraded overall recognition performance. 
-In this work, **we propose a novel unsupervised fair score normalization approach that is specifically designed to reduce the effect of bias in face recognition and subsequently lead to a significant overall performance boost**. 
-Our hypothesis is **built on the notation of individual fairness by designing a normalization approach that leads to treating ”similar” individuals ”similarly”**. 
+In this work, we propose a novel **unsupervised fair score normalization** approach that is specifically **designed to reduce the effect of bias in face recognition** and **subsequently lead to a significant overall performance boost**. 
+Our hypothesis is **built on the notation of individual fairness** by designing a normalization approach that leads to treating ”similar” individuals ”similarly”. 
 Experiments were conducted on three publicly available datasets captured under controlled and in-the-wild circumstances. 
 Results demonstrate that our solution reduces demographic biases, e.g. by up to 82.7% in the case when gender is considered. 
 Moreover, it mitigates the bias more consistently than existing works. 
