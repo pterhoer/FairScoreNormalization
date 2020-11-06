@@ -5,6 +5,7 @@
 Pattern Recognition Letters 2020
 
 * [Research Paper (arXiv)](https://arxiv.org/abs/2002.03592)
+* [Research Paper (Elesevier)](https://www.sciencedirect.com/science/article/abs/pii/S0167865520304128)
 * [Implementation](...)
 
 
