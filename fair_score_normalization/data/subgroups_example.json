@@ -1,0 +1,20 @@
+{
+	"__dataset__":"example",
+
+	"__grouping__": {
+	
+		"age": {
+			"__description__": "All age subgroups of the dataset. The key (i.e. age) must be a key of the namedtuple for the features property in the Dataset class",
+			"__displayname__": "Age",
+			"keys": ["age_all"]
+		}
+	
+	},
+
+	"age_all":
+	{
+		"__description__": "Example Age Group 1. These subgroups are analyzed in GBSN test method. This description gives you the option to write for yourself what this group is about.",
+		"__displayname__": "The text which is shown in respective plots legend",
+		"age":[1,2,3,4,5,6,7,8]
+	}
+}
