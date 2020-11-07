@@ -75,9 +75,32 @@ Even while making the recognition process more fair, in contrast to previous wor
 <img src="ImprovementRecognitionPerformance.png" width="600" >
 
 ## Installation
+We recommend Anaconda to install the required packages.
+This can be done by creating an virtual environment with given environment.yml via
 
-TODO Jan
+```shell
+conda env create -f environment.yml
+```
+and acivating this environment:
+```shell
+conda activate fsn
+```
 
+or by manually installing the following python packages with given versions:
+
+```shell
+scikit-learn=0.20.3
+tqdm=4.31.1
+numpy=1.14.6
+pandas=0.25.1
+scipy=1.5.2
+keras=2.2.4
+tensorflow=1.14.0
+matplotlib=3.2.2
+seaborn=0.9.0
+```
+After installation you can add your own datasets by implementing the Dataset base class in _codebase.datasets.base_dataset.py_.
+An example dataset is implemented in _codebase.datasets.dataset_example.py_.
 
 ## Citing
 
