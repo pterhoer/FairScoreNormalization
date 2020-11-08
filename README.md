@@ -102,6 +102,8 @@ seaborn=0.9.0
 After installation you can add your own datasets by implementing the Dataset base class in _codebase.datasets.base_dataset.py_.
 An example dataset is implemented in _codebase.datasets.dataset_example.py_.
 
+[To get started please have a look at the wiki.](https://github.com/pterhoer/FairScoreNormalization/wiki)
+
 ## Citing
 
 If you use this code, please cite the following paper.
