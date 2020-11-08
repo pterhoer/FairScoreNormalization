@@ -6,7 +6,7 @@ Pattern Recognition Letters 2020
 
 * [Research Paper (arXiv)](https://arxiv.org/abs/2002.03592)
 * [Research Paper (Elsevier)](https://www.sciencedirect.com/science/article/abs/pii/S0167865520304128)
-* [Implementation](...)
+* [Implementation](https://github.com/pterhoer/FairScoreNormalization/tree/main/fair_score_normalization)
 
 
 ## Table of Contents 
