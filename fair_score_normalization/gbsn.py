@@ -48,9 +48,9 @@ if __name__ == "__main__":
         # Run the model on the given dataset with cross validation
         gbsn = GBSN(CLUSTERING(K), model_name=MDL_NAME)
         
-        for CVD in CVDataset(DT, EMB):
-                global_thr, cluster_thresholds = gbsn.train(CVD)
-                gbsn.test(CVD, global_thr, cluster_thresholds)
+        for CVD in CVDataset(DT, EMB, fold_count=args.folds):
+            global_thr, cluster_thresholds = gbsn.train(CVD)
+            gbsn.test(CVD, global_thr, cluster_thresholds)
                 
     elif args.mode == "batch":
         
@@ -64,9 +64,9 @@ if __name__ == "__main__":
                                
             gbsn = GBSN(CLUSTERING(K), model_name=MDL_NAME)
         
-            for CVD in CVDataset(DT, EMB):
-                    global_thr, cluster_thresholds = gbsn.train(CVD)
-                    gbsn.test(CVD, global_thr, cluster_thresholds)
+            for CVD in CVDataset(DT, EMB, fold_count=args.folds):
+                global_thr, cluster_thresholds = gbsn.train(CVD)
+                gbsn.test(CVD, global_thr, cluster_thresholds)
         
     
     elif args.mode == "pp-cv":

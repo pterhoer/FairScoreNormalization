@@ -14,7 +14,7 @@ from tqdm import tqdm
 import numpy as np
 import sys
 
-EMBEDDING_TYPES = namedtuple("FEATUERS", ["ARCFACE", "FACENET", "VGG"])("arcface", "facenet", "vgg")
+EMBEDDING_TYPES = namedtuple("FEATURES", ["ARCFACE", "FACENET", "VGG"])("arcface", "facenet", "vgg")
 
 class Dataset(ABC):
 

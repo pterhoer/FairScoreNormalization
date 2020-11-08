@@ -66,13 +66,17 @@ class ExampleDataset(Dataset):
 
         # Create 50 random ages between 1 and 8, so we have 8 age groups
         self._features_age  = np.random.randint(1, 8, size=50)[cv_mask]
+        # Create 50 random gender values
+        self._features_gender = np.random.randint(0, 1, size=50)[cv_mask]
+        # Create 50 random ethnicity values
+        self._features_ethnicity = np.random.randint(0, 1, size=50)[cv_mask]
 
         # Create a namedtuple for every feature, in this case only age
         # If you want more, e.g. gender of ethnicity, add them to the list
         # in the namedtuple constructor:
         # ["age", "gender", "ethnicity]
         self._feature_constructor = namedtuple("ExampleFeature",
-                                               ["age"])
+                                               ["age", "gender", "ethnicity"])
         
         # Create a namedtuple constructor for an Example-Item
         self._item_constructor = namedtuple("ExampleItem", ["id",
@@ -122,7 +126,9 @@ class ExampleDataset(Dataset):
 
         """
         features = self._feature_constructor(
-                                                self._features_age[index]
+                                                self._features_age[index],
+                                                self._features_gender[index],
+                                                self._features_ethnicity[index]
                                              )
 
         return self._item_constructor(
@@ -152,6 +158,8 @@ class ExampleDataset(Dataset):
         self._embeddings = self._embeddings[mask]
         self._ids = self._ids[mask]
         self._features_age = self._features_age[mask]
+        self._features_gender = self._features_gender[mask]
+        self._features_ethnicity = self._features_ethnicity[mask]
         
     @property
     def embeddings(self):
@@ -169,7 +177,8 @@ class ExampleDataset(Dataset):
     def features(self):
         return self._feature_constructor(
                                          self._features_age,
-                                         self._features_gen
+                                         self._features_gender,
+                                         self._features_ethnicity
                                          )
 
     @property
