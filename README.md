@@ -110,23 +110,16 @@ If you use this code, please cite the following paper.
 
 
 ```
-@article{DBLP:journals/corr/abs-2002-03592,
-  author    = {Philipp Terh{\"{o}}rst and
-               Jan Niklas Kolf and
-               Naser Damer and
-               Florian Kirchbuchner and
-               Arjan Kuijper},
-  title     = {Post-Comparison Mitigation of Demographic Bias in Face Recognition
-               Using Fair Score Normalization},
-  journal   = {CoRR},
-  volume    = {abs/2002.03592},
-  year      = {2020},
-  url       = {https://arxiv.org/abs/2002.03592},
-  archivePrefix = {arXiv},
-  eprint    = {2002.03592},
-  timestamp = {Wed, 12 Feb 2020 16:38:55 +0100},
-  biburl    = {https://dblp.org/rec/journals/corr/abs-2002-03592.bib},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+@article{PRL2020Terhorst,
+  author={Philipp Terh\"{o}rst and Jan Niklas Kolf and Naser Damer and Florian Kirchbuchner and Arjan Kuijper},
+  title = "Post-comparison mitigation of demographic bias in face recognition using fair score normalization",
+  journal = "Pattern Recognition Letters",
+  volume = "140",
+  pages = "332 - 338",
+  year = "2020",
+  issn = "0167-8655",
+  doi = "https://doi.org/10.1016/j.patrec.2020.11.007",
+  url = "http://www.sciencedirect.com/science/article/pii/S0167865520304128",
 }
 ```
 
